@@ -1,20 +1,16 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import MyButton from "./Button/MyButton";
-import Toolbar from "./Button/Toolbar";
-import SearchForm from "./Form/SearchFrom";
-import SayHelloForm from "./Form/SayHelloForm";
-import Counter from "./Form/Counter";
+import { StrictMode } from "react";
+// import Counter from "./Counter/Counter";
+// import Counterapp from "./Counter/Counterapp";
+import Alert from "./Alert/Alert";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-      <MyButton text="Smash me" onSmash={() => alert("You smash me")} />
-      <MyButton text="Hit me" onSmash={() => alert("You hit me")} />
-        <Toolbar onClick={(e) =>
-        e.stopPropagation() ||
-          alert("You click me")} />
-          <SearchForm/>
-          <SayHelloForm/>
-          <Counter/>
+    <div>
+      {/* <Counter />
+      <Counter />
+      <Counterapp /> */}
+      <Alert text="Coba pencet" message="Noh kan berubah" />
+    </div>
   </StrictMode>
 );
