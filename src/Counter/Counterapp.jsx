@@ -10,8 +10,7 @@ export default function CounterApp() {
 
   return (
     <div>
-      <Counter />
-      {show2 && <Counter />}
+      {show2 ? <Counter name="2" /> : <p>Hilang</p>}
 
       <input
         type="checkbox"
